@@ -7,7 +7,7 @@ This repository contains all the created files for the Software Engineering prac
 **[Practice 1 - Tutorials](#practice-1---tutorials)**<br>
 **[Practice 2 - Requirements Analysis](#practice-2---requirements-analysis)**<br>
 **[Practice 3 - System Design](#practice-3---system-design)**<br>
-**[Practice 4 - Testing and Implementation](##practice-4---testing-and-implementation)**<br>
+**[Practice 4 - Testing and Implementation](#practice-4---testing-and-implementation)**<br>
 
 ![Header](./Pics/headerhead.png)
 ## Collaborators
