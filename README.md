@@ -24,8 +24,8 @@ In our first practice, we had to do tutorials of the things we learned in our fi
 In our case, we split the work so we could all have some practice on Markdown.
 
 * [Git Tutorial](https://github.com/RexusWolf/IS/blob/master/tutorial_git.md) (Made by Antonio and Fco. Javier)
-* [Branches tutorial](https://github.com/RexusWolf/IS/blob/master/tutorial_git.md) (Made by Álvaro)
-* [Github tutorial](https://github.com/RexusWolf/IS/blob/master/tutorial_git.md) (Made by Fco. Javier)
+* [Branches tutorial](https://github.com/RexusWolf/IS/blob/master/tutorial_branches.md) (Made by Álvaro)
+* [Github tutorial](https://github.com/RexusWolf/IS/blob/master/tutorial_github.md) (Made by Fco. Javier)
 
 ![Separator](./Pics/separator.png)
 ## Practice 2 - Requirements Analysis
