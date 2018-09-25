@@ -63,3 +63,39 @@ Have you ever saved different versions of a file? Something like:
 Branches accomplish similar goals in GitHub repositories.
 
 Here at **GitHub**, our developers, writers, and designers use branches for keeping bug fixes and feature work separate from our `master` (production) branch. When a change is ready, they merge their branch into `master`.
+
+## **To create a new branch**
+Go to your new repository `hello-world`.
+Click the drop down at the top of the file list that says branch: **master**.
+Type a branch name, readme-edits, into the new branch text box.
+Select the blue **Create branch** box or hit “Enter” on your keyboard.
+
+![branch](https://guides.github.com/activities/hello-world/readme-edits.gif)
+
+Now you have two branches, `master` and `readme-edits`. They look exactly the same, but not for long! Next we’ll add our changes to the new branch.
+
+# **Step 3. Make and commit changes**
+Bravo! Now, you’re on the code view for your `readme-edits` branch, which is a copy of `master`. Let’s make some edits.
+
+On GitHub, saved changes are called **commits**. Each commit has an associated *commit message*, which is a description explaining why a particular change was made. Commit messages capture the history of your changes, so other contributors can understand what you’ve done and why.
+
+## **Make and commit changes**
+Click the **README.md** file.
+Click the  pencil icon in the upper right corner of the file view to edit.
+You can write whatever you want in the editor.
+Write a commit message that describes your changes.
+Click **Commit changes** button.
+![commit](https://guides.github.com/activities/hello-world/commit.png)
+
+These changes will be made to just the **README.md** file on your `readme-edits` branch, so now this branch contains content that’s different from master.
+
+# **Step 4. Open a Pull Request**
+Nice edits! Now that you have changes in a *branch* off of `master`, you can open a **pull request**.
+
+Pull Requests are the heart of collaboration on GitHub. When you open a pull request, you’re proposing your changes and requesting that someone review and **pull in your contribution and merge them into their branch**. Pull requests show diffs, or differences, of the content from both branches. The changes, additions, and subtractions are shown in green and red.
+
+As soon as you make a commit, you can open a pull request and start a discussion, even before the code is finished.
+
+By using GitHub’s @mention system in your pull request message, you can ask for feedback from specific people or teams, whether they’re down the hall or 10 time zones away.
+
+You can even open pull requests in your own repository and merge them yourself. It’s a great way to learn the GitHub flow before working on larger projects.
