@@ -9,7 +9,7 @@ This repository contains all the created files for the Software Engineering prac
 **[Practice 3 - System Design](#practice-3---system-design)**<br>
 **[Practice 4 - Testing and Implementation](##practice-4---testing-and-implementation)**<br>
 
-![Header](./Pics/head.png)
+![Header](./Pics/headerhead.png)
 ## Collaborators
 
 This group is compounded by 3 students:
