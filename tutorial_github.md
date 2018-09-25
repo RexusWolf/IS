@@ -94,8 +94,41 @@ Nice edits! Now that you have changes in a *branch* off of `master`, you can ope
 
 Pull Requests are the heart of collaboration on GitHub. When you open a pull request, you’re proposing your changes and requesting that someone review and **pull in your contribution and merge them into their branch**. Pull requests show diffs, or differences, of the content from both branches. The changes, additions, and subtractions are shown in green and red.
 
-As soon as you make a commit, you can open a pull request and start a discussion, even before the code is finished.
+As soon as you make a *commit*, you can open a pull request and start a discussion, even before the code is finished.
 
-By using GitHub’s @mention system in your pull request message, you can ask for feedback from specific people or teams, whether they’re down the hall or 10 time zones away.
+![pull](https://guides.github.com/activities/hello-world/pr-tab.gif)
+
+![pull2](https://guides.github.com/activities/hello-world/pick-branch.png)
+
+![pull3](https://guides.github.com/activities/hello-world/create-pr.png)
+
+![pull4](https://guides.github.com/activities/hello-world/pr-form.png)
+
+By using GitHub’s [@mention system](https://help.github.com/articles/about-writing-and-formatting-on-github/#text-formatting-toolbar) in your pull request message, you can ask for feedback from specific people or teams, whether they’re down the hall or 10 time zones away.
 
 You can even open pull requests in your own repository and merge them yourself. It’s a great way to learn the GitHub flow before working on larger projects.
+
+# **Step 5. Merge your Pull Request**
+
+In this final step, it’s time to bring your changes together – merging your `readme-edits` branch into the `master` branch.
+
+1. Click the green **Merge pull request** button to merge the changes into `master`.
+2. Click **Confirm merge**.
+3. Go ahead and delete the branch, since its changes have been incorporated, with the **Delete branch** button in the purple box.
+
+![merge](https://guides.github.com/activities/hello-world/merge-button.png)
+
+![merge2](https://guides.github.com/activities/hello-world/delete-button.png)
+
+# **Congratulations!**
+By completing this tutorial, you’ve learned to **create a project** and make a pull request on GitHub!
+
+Here’s what you accomplished in this tutorial:
+
+* Created an open source repository
+* Started and managed a new branch
+* Changed a file and committed those changes to GitHub
+* Opened and merged a Pull Request
+* Take a look at your GitHub profile and you’ll see your new contribution squares!
+
+To learn more about the power of Pull Requests, we recommend reading the [GitHub flow Guide](https://guides.github.com/introduction/flow/). You might also visit [GitHub Explore](https://github.com/explore) and get involved in an Open Source project.
