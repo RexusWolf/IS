@@ -8,3 +8,7 @@ Estos archivos y ficheros pertenecen al Grupo 5.
 * Molina Prieto, Francisco Javier **(Portavoz del grupo)**
 * Prieto Barón, Álvaro
 * Muñoz Cubero, Antonio
+---
+<center>
+![LOGO](https://cdn3.iconfinder.com/data/icons/sociocons/256/github-sociocon.png)
+</center>
