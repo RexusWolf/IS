@@ -70,16 +70,71 @@ As you edit files, Git sees them as modified, because you’ve changed them sinc
 Now I,m going to show you some of the most basic commands to use **Git**, first of all, we need to start a repository...
 
 To start a repository, we have to be in the directory we wan to use and use the command:
-`git init`
+~~~
+git init
+~~~
 
 To add changes to the staging area we use: `git add`
 If you want to add all the content: `git add .`
 
-To validate the changes we use: `git commit -m "message"`
+To validate the changes we use:
+~~~
+git commit -m "message"
+~~~
 With this step we've sent the changes to the git repository.
 
-If you want to do the two steps before, faster, you can use: `git commit -am "message"`
+If you want to do the two steps before, faster, you can use:
+~~~
+git commit -am "message"
+~~~
 
-To check the commit history: `git log`, for some help `git log help`, for the last 5 commits `git log -n 5`, for a date `git log --since=2018-09-27`, to listate for an author: `git log --author="Manuel Alejandro"`.
+To check the commit history:
+~~~
+git log
+~~~
 
-To see the changes in the directory: ` git status `
+For some help:
+~~~
+git log help
+~~~
+
+For the last 5 commits:
+~~~
+git log -n 5
+~~~
+
+For a date:
+~~~
+git log --since=2018-09-27
+~~~
+
+to listate for an author:
+~~~
+git log --author="Manuel Alejandro"
+~~~
+To see the changes in the directory:
+~~~
+git status
+~~~
+
+To see the diferences between the file in the directory and the file in the **Git** repository:
+~~~
+git diff
+~~~
+
+To see the diferences between the file in the staging and the file in the **Git** repository:
+~~~
+git diff --staged
+~~~
+
+To remove files:
+~~~
+git rm file
+git commit -m "message"
+~~~
+
+To move o rename files:
+~~~
+git mv old new
+git commit -m "message"
+~~~
