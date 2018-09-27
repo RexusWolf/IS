@@ -26,9 +26,60 @@ I will follow this steps...
 
 # **Git** Configuration
 
-First of all, we can configurate the administrator name, email, favourite editor, etc.
+First of all, we can configurate the administrator name, email, core editor, etc.
 
 1. Change *Administrator name*
 ~~~
-git config --global user.name "*Admin Name*"
+git config --global user.name "Admin Name"
 ~~~
+
+2. Change *Email*
+~~~
+git config --global user.email name@mail.com
+~~~
+
+3. Choose your core *text editor*.
+~~~
+git config --global core.editor "atom"
+~~~
+
+4. Set the interface color
+~~~
+git config --global color.ui true
+~~~
+
+4. Show the configuration list
+~~~
+git config --list
+~~~
+
+## The three steins;gate of **Git**
+
+Typically, you’ll want to start making changes and committing snapshots of those changes into your repository each time the project reaches a state you want to record.
+
+Remember that each file in your working directory can be in one of two states: tracked or untracked. Tracked files are files that were in the last snapshot; they can be unmodified, modified, or staged. In short, tracked files are files that Git knows about.
+
+Untracked files are everything else — any files in your working directory that were not in your last snapshot and are not in your staging area. When you first clone a repository, all of your files will be tracked and unmodified because Git just checked them out and you haven’t edited anything.
+
+As you edit files, Git sees them as modified, because you’ve changed them since your last commit. As you work, you selectively stage these modified files and then commit all those staged changes, and the cycle repeats.
+
+<center> ![Git status](https://git-scm.com/book/en/v2/images/lifecycle.png)
+
+### Basic commands on **Git**
+
+Now I,m going to show you some of the most basic commands to use **Git**, first of all, we need to start a repository...
+
+To start a repository, we have to be in the directory we wan to use and use the command:
+`git init`
+
+To add changes to the staging area we use: `git add`
+If you want to add all the content: `git add .`
+
+To validate the changes we use: `git commit -m "message"`
+With this step we've sent the changes to the git repository.
+
+If you want to do the two steps before, faster, you can use: `git commit -am "message"`
+
+To check the commit history: `git log`, for some help `git log help`, for the last 5 commits `git log -n 5`, for a date `git log --since=2018-09-27`, to listate for an author: `git log --author="Manuel Alejandro"`.
+
+To see the changes in the directory: ` git status `
