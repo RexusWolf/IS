@@ -223,4 +223,4 @@ git clone "repository url"
 *GitHub Inc.* is a web-based hosting service for version control using Git.
 That's it, Git is the sofware that allows you to **track and host** versions of files on Github. In other words, you use commands of Git to track versions of your files. And Github is just a remote platform where these files are hosted.
  ![Gitnotgithub](https://cdn-images-1.medium.com/max/1600/1*l_rZs-gPQ1wzEdfyrtidww.png)
-If you want to know more about Github, you can visit our [Github tutorial](https://github.com/RexusWolf/IS/blob/master/tutorial_github.md) and give us some feedback.
+If you want to know more about Github, you can visit our [Github tutorial](https://github.com/RexusWolf/IS/blob/master/p1/tutorial_github.md) and give us some feedback.
