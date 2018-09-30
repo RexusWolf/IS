@@ -1,4 +1,4 @@
-![Git logo](https://cdn-images-1.medium.com/max/380/1*OvMsmQs0Rzs_ScuiTsuWjw.png)
+# ![Git logo](../Pics/gitlogo.png) Git Tutorial
 
 [**Visit the website.**](https://git-scm.com/)<br>
 

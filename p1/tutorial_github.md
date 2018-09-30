@@ -10,9 +10,9 @@ This tutorial teaches you GitHub essentials like repositories, branches and comm
 
 ### Table of Contents
 **[Starting in Github](#starting-in-github)**<br>
-**[Creating a repository](#step-1.-create-a-repository)**<br>
-**[Creating a branch](#step-2.-create-a-branch)**<br>
-**[Making commits](#step-3.-make-and-commit-changes)**<br>
+**[Creating a repository](#step-1-create-a-repository)**<br>
+**[Creating a branch](#step-2-create-a-branch)**<br>
+**[Making commits](#step-3-make-and-commit-changes)**<br>
 
 ## **Starting in Github**
 
