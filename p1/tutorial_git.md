@@ -1,5 +1,5 @@
-<center> ![Git logo](https://cdn-images-1.medium.com/max/380/1*OvMsmQs0Rzs_ScuiTsuWjw.png)
-</center>
+![Git logo](https://cdn-images-1.medium.com/max/380/1*OvMsmQs0Rzs_ScuiTsuWjw.png)
+
 [**Visit the website.**](https://git-scm.com/)<br>
 
 *Git* is a version control system for **tracking changes** in computer files and coordinating work on those files among multiple people.
@@ -11,7 +11,7 @@ how to work with it.
 **[Git Configuration](#how-to-configure-git)**<br>
 **[The three steins-gate of Git](#the-three-steins-gate-of-git)**<br>
 **[Basic commands](#basic-commands-on-git)**<br>
-**[Git & Github](#git-&-github)**<br>
+**[Git & Github](#git--github)**<br>
 ## **Starting in Git**
 
 ### **Some advantages of using Git**
