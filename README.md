@@ -26,6 +26,7 @@ In our case, we split the work so we could all have some practice on Markdown.
 * [Git Tutorial](https://github.com/RexusWolf/IS/blob/master/p1/tutorial_git.md)
 * [Branches tutorial](https://github.com/RexusWolf/IS/blob/master/p1/tutorial_branches.md)
 * [Github tutorial](https://github.com/RexusWolf/IS/blob/master/p1/tutorial_github.md)
+* [All tutorials](https://github.com/RexusWolf/IS/blob/master/p1/p1.md)
 
 ![Separator](./Pics/separator.png)
 ## Practice 2 - Requirements Analysis
