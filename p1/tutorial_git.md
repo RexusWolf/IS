@@ -138,3 +138,77 @@ To move o rename files:
 git mv old new
 git commit -m "message"
 ~~~
+
+To undo changes with **Git**:
+~~~
+git checkout -- file_name
+~~~
+
+Remove file from staging:
+~~~
+git reset HEAD file_name
+~~~
+
+Compliment the last commit:
+~~~
+git commit --amend -m "message"
+~~~
+
+Recover versions from a file of a old commit:
+~~~
+git checkout <id_commit> -- file_name
+~~~
+
+Revert a commit:
+~~~
+git revert <id_commit>
+~~~
+
+Undo multiple changes in the repository:
+~~~
+git reset --soft <id_commit>
+git reset --mixed <id_commit>
+git reset --hard <id_commit>
+~~~
+
+List the files that git don't control:
+~~~
+git clean -n
+~~~
+
+Ignore the file in the directory:
+~~~
+.gitignore
+~~~
+
+List the content of the repository from git:
+~~~
+git ls-tree master
+git ls-tree master^^^
+git ls-tree master~3
+~~~
+
+Log in a line:
+~~~
+git log --oneline
+~~~
+
+Log with the 3 last commit in a line:
+~~~
+git log --oneline -3
+~~~
+
+Examinate the content of a commit:
+~~~
+git show <id>
+~~~
+
+Compare a commit with the actual:
+~~~
+git diff <id> file_name
+~~~
+
+Compare two commits:
+~~~
+git diff id ... id file_name
+~~~
