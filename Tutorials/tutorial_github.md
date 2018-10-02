@@ -1,4 +1,4 @@
-# ![Tutorial Github](../Pics/githublogo.png) Github Tutorial
+# ![Tutorial Github](../Media/githublogo.png) Github Tutorial
 
 [**Visit the website.**](http://github.com)<br>
 
@@ -48,7 +48,7 @@ By default your repository has one branch named `master` which is considered to 
 
 By default your repository has one branch named `master` which is considered to be the definitive branch. We use branches to experiment and make edits before committing them to master.
 
-If you want to know more about branches, we recommend you to visit our [branches tutorial](https://github.com/RexusWolf/IS/blob/master/p1/tutorial_branches.md)
+If you want to know more about branches, we recommend you to visit our [branches tutorial](https://github.com/RexusWolf/IS/blob/master/Tutorials/tutorial_branches.md)
 
 # **Step 3. Make and commit changes**
 

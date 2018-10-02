@@ -28,4 +28,4 @@ Stashing is used when you want to switch branches and save your previous work wi
 ### 4. Other commands used with branches
 We can easily compare branches with 'git diff <branch1> <branch2>', see which branches are the same as the current branch with 'git branch --merged'. To delete a branch we use 'git branch -D <name>', and to rename it, 'git branch -m <old name> <new name>'
 
-Visit our [Git tutorial](https://github.com/RexusWolf/IS/blob/master/p1/tutorial_git.md) if you want to know more about common branches commands.
+Visit our [Git tutorial](https://github.com/RexusWolf/IS/blob/master/Tutorials/tutorial_git.md) if you want to know more about common branches commands.
