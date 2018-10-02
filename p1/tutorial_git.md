@@ -51,7 +51,7 @@ git config --global color.ui true
 git config --list
 ~~~
 
-## **The three steins-gate of Git**
+## **The three states of Git**
 
 Typically, you’ll want to start making changes and **committing** snapshots of those changes into your *repository* each time the project reaches a state you want to record.
 
