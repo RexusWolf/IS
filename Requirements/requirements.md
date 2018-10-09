@@ -41,4 +41,5 @@
 	* Requisitos no funcionales:
 		* Simplicidad de la aplicación.
 		* Interfaz atractiva.
-		* Inglés/Español
+		* Inglés/Español.
+		* Esté codificado en **C++**.
