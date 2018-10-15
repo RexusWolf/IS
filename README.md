@@ -31,7 +31,7 @@ In our case, we split the work so we could all have some practice on Markdown.
 ![Separator](./Media/separator.png)
 ## Practice 2 - Requirements Analysis
 
-In our second practice, we had to create a software that manages a student database. This software will be used by the teacher to manage the student teams in the practice classes.
+In our second practice, we had to create a software that manages a student database. This software would be used by the teacher to manage the student's teams in the practice classes.
 
 * [Requirements](https://github.com/RexusWolf/IS/blob/master/Requirements/requirements.md)
 * [Study Cases](https://github.com/RexusWolf/IS/tree/master/Requirements/casestudies)
