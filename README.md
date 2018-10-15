@@ -34,6 +34,8 @@ In our case, we split the work so we could all have some practice on Markdown.
 In our second practice, we had to create a software that manages a student database. This software will be used by the teacher to manage the student teams in the practice classes.
 
 * [Requirements](https://github.com/RexusWolf/IS/blob/master/Requirements/requirements.md)
+* [Study Cases](https://github.com/RexusWolf/IS/tree/master/Requirements/casestudies)
+* [User Stories](https://github.com/RexusWolf/IS/tree/master/Requirements/userstories)
 * [Diagram](./Media/diagram.png)
 
 ![Separator](./Media/separator.png)
