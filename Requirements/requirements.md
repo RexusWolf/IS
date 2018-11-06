@@ -15,6 +15,12 @@
       * Address
       * Highest Registered Course
       * Birth Date
+
+    #### Constraints:
+      * The number of students is limited to 150.
+      * A group can have more than one leader.
+      * If any of this would happen, the sytem throws an error and doesn't insert the student.
+
   * ### Search for a student: **ID 001**
       * By surname (ask for ID if there are more than one)
       * By ID
@@ -24,7 +30,7 @@
   * ### Delete all students: **ID 002b**
       * Clean the database completely
   * ### Edit a student's data. **ID 003**
-      * Search for a student(001), ask for the new data, and override the old data.
+      * Search for a student(001), ask for the new data, and override the old data. A group's leader can't be changed this way.
   * ### Edit a group's leader. **ID 004**
   * ### Show all students: **ID 005**
       * The system will generate a Markdown/HTML file that contains the data of all the students.
