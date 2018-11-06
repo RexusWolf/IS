@@ -1,45 +1,42 @@
-# **Requisitos software P2**
-* Aplicación que gestione datos introducidos por el alumno que permita:
-	* Inserción de alumno: **ID = 000**
-		* Datos alumno:
-			* DNI
-			* Nombre
-			* Apellidos
-			* Teléfono
-			* Email corporativo
-			* Dirección Postal
-			* Curso más alto en el que está matriculado
-			* Fecha de nacimiento
-			* Nº de equipo **(opcional)**
-			* ¿Tiene Rol de líder? **(opcional)**
-	* Búsqueda de alumno: **ID = 001**
-		* Por Apellidos (En caso de conflicto, preguntar DNI)
-		* Por DNI
-		* En caso de no encontrar un alumno, volver a preguntar al usuario.
-	* Borrado de alumno. **ID = 002**
-		* Búsqueda por apellido. (En caso de conflicto, preguntar DNI)
-		* Búsqueda por DNI.
-		* Al borrar el líder de un equipo, ese equipo se queda sin líder hasta que se asigne otro.
-		* Borrado completo de todos los alumnos.
-	* Posibilidad de modificar datos de alumnos. ** ID = 003**
-	* Posibilidad de modificar líder de un grupo.** ID = 004**
-	* Permite la muestra de alumnos:             ** ID = 005**
-		* HTML
-		* Markdown
-		* Función que muestre todos los alumnos y que genere 1 solo fichero.
-		* Ordenación ascendente/descendente:
-			* Ordenado de forma alfabética (Nombre/Apellido).
-			* DNI.
-			* Curso más alto en el que está matriculado.
-	* Restricciones:
-		* Nº de alumnos totales = 150.
-		* Nº de líderes por grupo = 1.
-		* Nº de alumnos por grupo no es una restricción.
-	* Importación de datos (*mediante un fichero binario*). ** ID = 006**
-	* Guardado de copias de seguridad (*en ficheros binarios*). ** ID = 007**
-	* Requisitos no funcionales:
-		* Simplicidad de la aplicación.
-		* Interfaz atractiva.
-		* Inglés/Español
-    * Esté en c++
-    * Debe funcionar en sistemas Linux.
+# **Software requirements**
+## Functional
+* Application that manages the student data, and allows the professor to:
+  * ### Insert a student: **ID 000**
+    #### Data Required:
+      * ID
+      * Name
+      * Surname
+
+    #### Optional Data:
+      * Group Number
+      * Is leader of group?
+      * Phone Number
+      * Corporative Email
+      * Address
+      * Highest Registered Course
+      * Birth Date
+  * ### Search for a student: **ID 001**
+      * By surname (ask for ID if there are more than one)
+      * By ID
+      * If the student doesn't exist, the system asks for another one or to exit.
+  * ### Delete a student: **ID 002a**
+      * Search for a student(like in 001) and delete it.
+  * ### Delete all students: **ID 002b**
+      * Clean the database completely
+  * ### Edit a student's data. **ID 003**
+      * Search for a student(001), ask for the new data, and override the old data.
+  * ### Edit a group's leader. **ID 004**
+  * ### Show all students: **ID 005**
+      * The system will generate a Markdown/HTML file that contains the data of all the students.
+      * This file can be ordered alphabetically by name or surname, by ID or by highest course, both ascending and descending.
+  * ### Import data from backup: **ID 006**
+      *
+  * ### Create a backup: **ID 007**
+      * Only the coordinator can do it.
+      * Creates a binary file containing the data from all the students.
+
+## Non-Functional
+  * Written in C++
+  * Works in Linux-based systems.
+  * Simplicity
+  * Optional GUI
