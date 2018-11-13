@@ -36,7 +36,7 @@
       * The system will generate a Markdown/HTML file that contains the data of all the students.
       * This file can be ordered alphabetically by name or surname, by ID or by highest course, both ascending and descending.
   * ### Import data from backup: **ID 006**
-      *
+      * The system will load the data from a binary file, like the ones created with the backup.
   * ### Create a backup: **ID 007**
       * Only the coordinator can do it.
       * Creates a binary file containing the data from all the students.
