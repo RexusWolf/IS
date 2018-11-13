@@ -2,7 +2,7 @@
 ## Functional
 * Application that manages the student data, and allows the professor to:
   * ### Insert a student: **ID 000**
-    #### Data Required:
+    #### Required Data:
       * ID
       * Name
       * Surname
@@ -18,7 +18,7 @@
 
     #### Constraints:
       * The number of students is limited to 150.
-      * A group can have more than one leader.
+      * A group can't have more than one leader.
       * If any of this would happen, the sytem throws an error and doesn't insert the student.
 
   * ### Search for a student: **ID 001**
