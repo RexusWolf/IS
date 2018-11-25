@@ -40,5 +40,12 @@ In our second practice, we had to create a software that manages a student datab
 
 ![Separator](./Media/separator.png)
 ## Practice 3 - System Design
+
+In our third practice, we learned about Class Diagrams and Sequence Diagrams, two types of UML structure diagrams. We had to make our own class diagram and a sequence diagrams for each user case. Also, we did a brief explanation of these diagrams in Markdown.
+
+* [Class Diagram Explanation](https://github.com/RexusWolf/IS/tree/master/System_Design/ClassDiagram.md)
+* [Sequence Diagram Explanation](https://github.com/RexusWolf/IS/tree/master/System_Design/SequenceDiagram.md)
+* [Diagrams](https://github.com/RexusWolf/IS/tree/master/System_Design/Diagrams)
+
 ![Separator](./Media/separator.png)
 ## Practice 4 - Testing and Implementation

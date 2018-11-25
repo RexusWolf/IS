@@ -2,7 +2,7 @@
 
 Here's a fast explanation of what is a Sequence Diagram and how it works.
 
-*Sequence diagrams* are a **type of UML diagram**, as the Class Diagrams.
+*Sequence diagrams* are a **type of UML structure diagram**, as the Class Diagrams.
 They are a popular dynamic modeling solution in UML because they specifically focus on **lifelines**, or the processes and objects that live simultaneously, and the messages exchanged between them to perform a function before the lifeline ends.
 
 ## Advantages of Sequence Diagrams
