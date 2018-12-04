@@ -1,16 +1,19 @@
 // ID_000: Insert Student
 
+#include <cstdlib>
+#include <string>
+using std::string;
 // This function changes /n to /0.
-void changeChar(char *namechar){
-  for(int i=0; i<strlen(namechar); i++){
-    if(namechar[i]=='\n') namechar[i]='\0';
+void changeString(string *namestring){
+  for(int i=0; i<strlen(namestring); i++){
+    if(namestring[i]=='\n') namestring[i]='\0';
   }
 }
 
-char* rline(char* dst, FILE* stream){
-  char* aux =fgets(dst, 50, stream);
+string* rline(string* dst, FILE* stream){
+  string* aux =fgets(dst, 50, stream);
   if(aux!=NULL){
-    changeChar(aux);
+    changeString(aux);
   }
   return aux;
 }
@@ -18,19 +21,15 @@ char* rline(char* dst, FILE* stream){
 // This function creates an auxiliar student that we'll send to INSERT_STUDENT.
 Student newStudent(){
   Student aux;
-  char dni[50];
-  char name[50];
-  char surname[50];
-  char address[50];
-  char email[50];
-  char birthdate[50];
+  string dni[50];
+  string name[50];
+  string surname[50];
+  string address[50];
+  string email[50];
+  string birthdate[50];
 
-  printf("Introduce DNI:\n");
-  rline(aux.dni, stdin);
   printf("Introduce NAME:\n");
   rline(aux.name, stdin);
-  printf("Introduce SURNAME:\n")
-  rline(aux.surname, stdin);
   printf("Introduce ADDRESS:\n");
   rline(aux.address, stdin);
   printf("Introduce EMAIL:\n");
@@ -49,12 +48,19 @@ Student newStudent(){
   return aux;
 }
 
-void INSERT_STUDENT(char *namefile){
+void INSERT_STUDENT(string *namefile, string &s.surname, string &s.dni){
+  // In the next codeline we'll check if the student is already in our database.
+  if(FIND_STUDENT(s.surname, s.dni)>=1){
+    return 1;
+  }
 
-  std::ofstream f;
-  f.open(namefile, std:ios::out); // Opens file in write mode.
-  Student aux = newStudent();
-  f << aux << '\n' // Adds new student at the end of the file.
-  fclose(f);
-
+  else{
+    std::ofstream f;
+    f.open(namefile, std:ios::out); // Opens file in write mode.
+    Student aux = newStudent();
+    aux.dni = s.dni;
+    aux.surname = s.surname;
+    f << aux << '\n' // Adds new student at the end of the file.
+    fclose(f);
+  }
 }

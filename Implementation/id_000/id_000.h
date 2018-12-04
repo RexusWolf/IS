@@ -1,9 +1,9 @@
 #ifndef ID_000_H
 #define ID_000_H
 
-  void changeChar(char *namechar);
-  char* rline(char* dst, FILE* stream);
+  void changeString(string *namestring)
+  string* rline(string* dst, FILE* stream);
   Student newStudent();
-  void INSERT_STUDENT(char *namefile);
+  void INSERT_STUDENT(string *namefile, string &s.surname, string &s.dni);
 
 #endif
