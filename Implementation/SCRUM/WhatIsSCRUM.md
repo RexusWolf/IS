@@ -1,4 +1,4 @@
-# ![SCRUM](../Media/ScrumLogo.png)
+# ![SCRUM](/Media/ScrumLogo.png)
 
 [**Visit the website.**](https://www.scrum.org/)<br>
 
@@ -23,7 +23,7 @@ Scrum is proposed for...
 * **Team**: Implement the funcionalities.
 * **Users**: Final beneficers.
 
-![ScrumTeam](../Media/ScrumTeam.png)
+![ScrumTeam](/Media/ScrumTeam.png)
 
 ## Scrum tools:
 
@@ -31,4 +31,4 @@ Scrum is proposed for...
 * **Sprint Backlog**: Funcionality to develop in an specific sprint.
 * **Burndown Chart**: Graphical representation of work left to do versus time.
 
-![ScrumTeam](../Media/ScrumTools.png)
+![ScrumTeam](/Media/ScrumTools.png)
