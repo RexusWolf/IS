@@ -52,4 +52,4 @@ In our third practice, we learned about Class Diagrams and Sequence Diagrams, tw
 
 In our fourth and...sadly...last practice, we're going to work together as a Scrum Team (or at least we'll try) and finish our project, working on the implementation and testing of it.
 
-* [What is Scrum?](https://github.com/RexusWolf/IS/tree/master/Implementation/WhatIsSCRUM.md)
+* [What is Scrum?](https://github.com/RexusWolf/IS/tree/master/Implementation/SCRUM/WhatIsSCRUM.md)
