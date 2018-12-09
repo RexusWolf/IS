@@ -20,7 +20,7 @@ Scrum is proposed for...
 
 * **Product Owner**: Sets the project action guidelines.
 * **Scrum Master**: Guides the reunions and coordinates the team.
-* **Team**: Implement the funcionalities.
+* **Team**: Implement the functionalities.
 * **Users**: Final beneficers.
 
 ![ScrumTeam](/Media/ScrumTeam.png)
