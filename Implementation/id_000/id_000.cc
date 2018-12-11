@@ -15,7 +15,7 @@ void changeString(string *namestring){
   }
 }
 
-string* rline(string* dst, FILE* stream){
+string* rline(string* dst, fstream& stream){
   string* aux =fgets(dst, 50, stream);
   if(aux!=NULL){
     changeString(aux);
@@ -33,21 +33,21 @@ Student newStudent(){
   string email[50];
   string birthdate[50];
 
-  printf("Introduce NAME:\n");
+  cout<<"Introduce NAME"<<endl;
   rline(aux.name, stdin);
-  printf("Introduce ADDRESS:\n");
+  cout<<"Introduce ADDRESS"<<endl;
   rline(aux.address, stdin);
-  printf("Introduce EMAIL:\n");
+  cout<<"Introduce EMAIL"<<endl;
   rline(aux.email, stdin);
-  printf("Introduce BIRTH DATE:\n");
+  cout<<"Introduce BIRTH DATE"<<endl;
   rline(aux.birthdate, stdin);
-  printf("Introduce PHONE NUMBER:\n");
+  cout<<"Introduce PHONE NUMBER"<<endl;
   scanf("%d", &aux.phonenumber);
-  printf("Introduce HIGHEST COURSE REGISTERED:\n");
+  cout<<"Introduce HIGHEST COURSE REGISTERED"<<endl;
   scanf("%d", %aux.course);
-  printf("Introduce TEAM NUMBER:\n");
+  cout<<"Introduce TEAM NUMBER"<<endl;
   scanf("%d", %aux.teamnumber);
-  printf("Introduce ROLE:\n");
+  cout<<"Introduce ROLE"<<endl;
   scanf("%d", %aux.role);
 
   return aux;
