@@ -1,11 +1,10 @@
-// Search Student function
-//The function let you search an student in the list.
-//The function reutrn the number of student that we found with a surmano o dni
+// ID_001: Search Student
+//The function lets you search an student in the list.
+//The function returns the number of students that match a surname or dni.
 
-
-/* primero abro database y compruebo de primera mano cuantos alumnos existen
-con el apellido introducido, si no hay ninguno, se retorna 0, si existe mas de
-uno, pido el dni para acotar la busqueda.
+/* Database opening and check of students quantity matching surname.
+In case there's no matching student, the function returns 0. If there's more than
+one matching student, the function asks for the DNI.
 */
 
 #include "persona.h"

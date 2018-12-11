@@ -2,7 +2,12 @@
 
 #include <cstdlib>
 #include <string>
+#include <fstream>
+#include <iostream>
+#include "id_000.h"
+
 using std::string;
+
 // This function changes /n to /0.
 void changeString(string *namestring){
   for(int i=0; i<strlen(namestring); i++){
