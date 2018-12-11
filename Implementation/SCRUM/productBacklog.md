@@ -12,7 +12,7 @@
  **ESTIMATION**: 2 &nbsp;&nbsp; **PRIORITY**: 1
 
 * **ID**: 004 &nbsp;&nbsp;&nbsp;**NAME**: Modify Leader &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
- **ESTIMATION**: 2 &nbsp;&nbsp; **PRIORITY**: 1
+ **ESTIMATION**: 2 &nbsp;&nbsp; **PRIORITY**: 2
 
 * **ID**: 002a &nbsp;**NAME**: Remove Student &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
  **ESTIMATION**: 2 &nbsp;&nbsp; **PRIORITY**: 2
@@ -26,13 +26,13 @@
  **ESTIMATION**: 1 &nbsp;&nbsp; **PRIORITY**: 2
 
 * **ID**: 006 &nbsp;&nbsp;&nbsp;**NAME**: Import Data &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
- **ESTIMATION**: 1 &nbsp;&nbsp; **PRIORITY**: 2
+ **ESTIMATION**: 1 &nbsp;&nbsp; **PRIORITY**: 4
 
 * **ID**: 007 &nbsp;&nbsp;&nbsp;**NAME**: Save Data &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-**ESTIMATION**: 1 &nbsp;&nbsp; **PRIORITY**: 2
+**ESTIMATION**: 1 &nbsp;&nbsp; **PRIORITY**: 4
 
 * **ID**: 009 &nbsp;&nbsp;&nbsp;**NAME**: Delete Teacher &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
- **ESTIMATION**: 1 &nbsp;&nbsp; **PRIORITY**: 2
+ **ESTIMATION**: 1 &nbsp;&nbsp; **PRIORITY**: 3
 
 * **ID**: 008 &nbsp;&nbsp;&nbsp;**NAME**: Add Teacher &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 **ESTIMATION**: 1 &nbsp;&nbsp; **PRIORITY**: 3
