@@ -14,10 +14,13 @@ one matching student, the function asks for the DNI.
 #include <iostream>
 #include <fstream>
 
-std::string aux_surname;
-int counter = 0;
+
 
 int Find_Student(){
+
+  std::string aux_surname;
+  int counter = 0;
+  
   //We use a txt file as database, so, let's open .txt
   //Declare an input file stream (ifstream) variable.
 
