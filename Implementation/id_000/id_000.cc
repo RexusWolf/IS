@@ -5,23 +5,9 @@
 #include <fstream>
 #include <iostream>
 #include "id_000.h"
-
+#include "person.h"
+#include "student.h"
 using std::string;
-
-// This function changes /n to /0.
-void changeString(string *namestring){
-  for(int i=0; i<strlen(namestring); i++){
-    if(namestring[i]=='\n') namestring[i]='\0';
-  }
-}
-
-string* rline(string* dst, fstream& stream){
-  string* aux =fgets(dst, 50, stream);
-  if(aux!=NULL){
-    changeString(aux);
-  }
-  return aux;
-}
 
 // This function creates an auxiliar student that we'll send to INSERT_STUDENT.
 Student newStudent(){
@@ -32,28 +18,36 @@ Student newStudent(){
   string address[50];
   string email[50];
   string birthdate[50];
-
+  int teamnumber, course, role, phonenumber;
   cout<<"Introduce NAME"<<endl;
-  rline(aux.name, stdin);
+  name = getName();
+  setName(name);
   cout<<"Introduce ADDRESS"<<endl;
-  rline(aux.address, stdin);
+  address = getAddress();
+  setAddress(address);
   cout<<"Introduce EMAIL"<<endl;
-  rline(aux.email, stdin);
+  email = getEmail();
+  setEmail(email);
   cout<<"Introduce BIRTH DATE"<<endl;
-  rline(aux.birthdate, stdin);
+  birthdate = getBirthDate();
+  setBirthDate(birthdate);
   cout<<"Introduce PHONE NUMBER"<<endl;
-  scanf("%d", &aux.phonenumber);
+  phonenumber = getPhoneNumber();
+  setPhoneNumber(phonenumber);
   cout<<"Introduce HIGHEST COURSE REGISTERED"<<endl;
-  scanf("%d", %aux.course);
+  course = getCourse();
+  setCourse(course);
   cout<<"Introduce TEAM NUMBER"<<endl;
-  scanf("%d", %aux.teamnumber);
+  teamnumber = getTeamNumber();
+  setTeamNumber(teamnumber);
   cout<<"Introduce ROLE"<<endl;
-  scanf("%d", %aux.role);
+  role = getRole();
+  setRole(role);
 
   return aux;
 }
 
-void INSERT_STUDENT(string *namefile, string &s.surname, string &s.dni){
+void INSERT_STUDENT(string &namefile, string &s.surname, string &s.dni){
   // In the next codeline we'll check if the student is already in our database.
   if(FIND_STUDENT(s.surname, s.dni)>=1){
     return 1;
@@ -61,11 +55,11 @@ void INSERT_STUDENT(string *namefile, string &s.surname, string &s.dni){
 
   else{
     std::ofstream f;
-    f.open(namefile, std:ios::out); // Opens file in write mode.
+    f.open(namefile, std:ios::out | ios:binary); // Opens file in write mode.
     Student aux = newStudent();
     aux.dni = s.dni;
     aux.surname = s.surname;
-    f << aux << '\n' // Adds new student at the end of the file.
-    fclose(f);
+    f.write((char*)&aux, sizeof(Student)); // Adds new student at the end of the file.
+    f.close();
   }
 }
