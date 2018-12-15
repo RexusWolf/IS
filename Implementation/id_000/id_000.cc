@@ -55,7 +55,7 @@ bool insertStudent(Student& s, list<Student> students){
     }
 
     else{
-      students_.insert(students_.end(), s); // Adds new student at the end of the file.
+      students.push_back(s); // Adds new student at the end of the file.
       return true;
     }
   }
