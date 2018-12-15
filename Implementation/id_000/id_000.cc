@@ -4,62 +4,62 @@
 #include <string>
 #include <fstream>
 #include <iostream>
+#include <list>
 #include "id_000.h"
 #include "person.h"
-#include "student.h"
+#include "student.h"¡
 using std::string;
+using std::list;
 
 // This function creates an auxiliar student that we'll send to INSERT_STUDENT.
 Student newStudent(){
   Student aux;
-  string dni[50];
-  string name[50];
-  string surname[50];
-  string address[50];
-  string email[50];
-  string birthdate[50];
+  string dni[32];
+  string name[32];
+  string surname[32];
+  string address[32];
+  string email[32];
+  string birthdate[32];
   int teamnumber, course, role, phonenumber;
-  cout<<"Introduce NAME"<<endl;
-  name = getName();
-  setName(name);
-  cout<<"Introduce ADDRESS"<<endl;
-  address = getAddress();
-  setAddress(address);
-  cout<<"Introduce EMAIL"<<endl;
-  email = getEmail();
-  setEmail(email);
-  cout<<"Introduce BIRTH DATE"<<endl;
-  birthdate = getBirthDate();
-  setBirthDate(birthdate);
-  cout<<"Introduce PHONE NUMBER"<<endl;
-  phonenumber = getPhoneNumber();
-  setPhoneNumber(phonenumber);
-  cout<<"Introduce HIGHEST COURSE REGISTERED"<<endl;
-  course = getCourse();
-  setCourse(course);
-  cout<<"Introduce TEAM NUMBER"<<endl;
-  teamnumber = getTeamNumber();
-  setTeamNumber(teamnumber);
-  cout<<"Introduce ROLE"<<endl;
-  role = getRole();
-  setRole(role);
+  cout<<"Introduce NAME: "<<endl;
+  cin>>dni;
+  aux.setName(name);
+  cout<<"\nIntroduce ADDRESS: "<<endl;
+  cin>>address;
+  aux.setAddress(address);
+  cout<<"\nIntroduce EMAIL: "<<endl;
+  cin>>address;
+  aux.setEmail(email);
+  cout<<"\nIntroduce BIRTH DATE: "<<endl;
+  cin>>email;
+  aux.setBirthDate(birthdate);
+  cout<<"\nIntroduce PHONE NUMBER: "<<endl;
+  cin>>birthdate;
+  aux.setPhoneNumber(phonenumber);
+  cout<<"\nIntroduce HIGHEST COURSE REGISTERED: "<<endl;
+  cin>>phonenumber;
+  aux.setCourse(course);
+  cout<<"\nIntroduce TEAM NUMBER: "<<endl;
+  cin>>course;
+  aux.setTeamNumber(teamnumber);
+  cout<<"\nIntroduce ROLE: "<<endl;
+  cin>>role;
+  aux.setRole(role);
 
   return aux;
 }
 
-void INSERT_STUDENT(string &namefile, string &s.surname, string &s.dni){
+void INSERT_STUDENT(string &s.surname, string &s.dni, list<Student> students_){
   // In the next codeline we'll check if the student is already in our database.
-  if(FIND_STUDENT(s.surname, s.dni)>=1){
+  if(FIND_STUDENT(s.surname, s.dni, students_.begin(), students_.end())>=1){
     return 1;
   }
 
   else{
-    std::ofstream f;
-    f.open(namefile, std:ios::out | ios:binary); // Opens file in write mode.
     Student aux = newStudent();
     aux.dni = s.dni;
     aux.surname = s.surname;
-    f.write((char*)&aux, sizeof(Student)); // Adds new student at the end of the file.
-    f.close();
+    students_.insert(students_.end(), aux); // Adds new student at the end of the file.
+    return 0;
   }
 }
