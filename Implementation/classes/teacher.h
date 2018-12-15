@@ -14,9 +14,9 @@
   public:
     inline Teacher(const string &username, const string &encPassword,
     const string &name, const string &surname, const string &dni,
-    const string &address = "", consr string &birthDate, const int phoneNumber,
+    const string &address = "", const string &birthDate, const int phoneNumber,
     const bool isCoordinator = false):
-    Persona(name, surname, dni, address, birthDate, phoneNumber){
+    Person(name, surname, dni, address, birthDate, phoneNumber){
       username_ = username;
       encPassword_ = encPassword;
       isCoordinator_ = isCoordinator;
@@ -34,5 +34,5 @@
     inline bool loginAttempt(const string &username, const string &password){
       return( (username == username_) && (hash256_hex_string(password) == encPassword_)
     }
-  }
+  };
 #endif

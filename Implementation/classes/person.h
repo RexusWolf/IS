@@ -1,7 +1,7 @@
 #ifndef PERSON_H
 #define PERSON_H value
   #include <string>
-  using std::string
+  using std::string;
 
   class Person{
   private:
@@ -9,7 +9,8 @@
     int phoneNumber_;
   public:
     inline Person(const string &name, const string &surname, const string &dni,
-    const string &address = "", consr string &birthDate, const int phoneNumber){
+    const string &address = "", const string &birthDate = "",
+    const int phoneNumber = 0){
     name_ = name; surname_ = surname; dni_ = dni; address_ = address;
     birthDate_ = birthDate; phoneNumber_ = phoneNumber;
     }
@@ -26,11 +27,13 @@
     inline string getAddress() const {return address_;}
     inline void setAddress(const string &address) {address_ = address;}
 
-    inline string geBirthDatet() const {return birthDate_;}
+    inline string getBirthDate() const {return birthDate_;}
     inline void setBirthDate(const string birthDate) {birthDate_ = birthDate;}
 
-    inline int getPhoneNumber() const {return phoneNumber;}
+    inline int getPhoneNumber() const {return phoneNumber_;}
     inline void setPhoneNumber(const int phoneNumber) {phoneNumber_ = phoneNumber;}
-  }
+  };
+
+
 
 #endif
