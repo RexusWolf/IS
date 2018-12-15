@@ -14,52 +14,50 @@ using std::list;
 // This function creates an auxiliar student that we'll send to INSERT_STUDENT.
 Student newStudent(){
   Student aux;
-  string dni[32];
-  string name[32];
-  string surname[32];
-  string address[32];
-  string email[32];
-  string birthdate[32];
-  int teamnumber, course, role, phonenumber;
+  string aux[32];
+  int intaux;
   cout<<"Introduce NAME: "<<endl;
-  cin>>dni;
-  aux.setName(name);
+  cin>>aux;
+  aux.setName(aux);
+	cout<<"Introduce SURNAME: "<<endl;
+  cin>>aux;
+  aux.setSurname(aux);
   cout<<"\nIntroduce ADDRESS: "<<endl;
-  cin>>address;
-  aux.setAddress(address);
+  cin>>aux;
+  aux.setAddress(aux);
   cout<<"\nIntroduce EMAIL: "<<endl;
-  cin>>address;
-  aux.setEmail(email);
+  cin>>aux;
+  aux.setEmail(aux);
   cout<<"\nIntroduce BIRTH DATE: "<<endl;
-  cin>>email;
-  aux.setBirthDate(birthdate);
+  cin>>aux;
+  aux.setBirthDate(aux);
   cout<<"\nIntroduce PHONE NUMBER: "<<endl;
-  cin>>birthdate;
-  aux.setPhoneNumber(phonenumber);
+  cin>>intaux;
+  aux.setPhoneNumber(intaux);
   cout<<"\nIntroduce HIGHEST COURSE REGISTERED: "<<endl;
-  cin>>phonenumber;
-  aux.setCourse(course);
+  cin>>intaux;
+  aux.setCourse(intaux);
   cout<<"\nIntroduce TEAM NUMBER: "<<endl;
-  cin>>course;
-  aux.setTeamNumber(teamnumber);
+  cin>>intaux;
+  aux.setTeamNumber(intaux);
   cout<<"\nIntroduce ROLE: "<<endl;
-  cin>>role;
-  aux.setRole(role);
+  cin>>intaux;
+  aux.setRole(intaux);
 
   return aux;
 }
 
-void INSERT_STUDENT(string &s.surname, string &s.dni, list<Student> students_){
+bool insertStudent(Student& s, list<Student> students){
   // In the next codeline we'll check if the student is already in our database.
-  if(FIND_STUDENT(s.surname, s.dni, students_.begin(), students_.end())>=1){
-    return 1;
-  }
+  if(students.size()<150){
+    if(findStudent(s.getSurname(), s.getDNI(), students_.begin(), students_.end())>=1){
+      return false;
+    }
 
-  else{
-    Student aux = newStudent();
-    aux.dni = s.dni;
-    aux.surname = s.surname;
-    students_.insert(students_.end(), aux); // Adds new student at the end of the file.
-    return 0;
+    else{
+      students_.insert(students_.end(), s); // Adds new student at the end of the file.
+      return true;
+    }
   }
+  else return false;
 }
