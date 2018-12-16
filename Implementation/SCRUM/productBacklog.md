@@ -1,42 +1,17 @@
 # PRODUCT BACKLOG
 
-* Add System Foundations.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  **ESTIMATION**: 5 &nbsp;&nbsp;&nbsp;&nbsp; **PRIORITY**: 0
-
-* **ID**: 010 &nbsp;&nbsp;&nbsp;**NAME**: Login &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-**ESTIMATION**: 2 &nbsp;&nbsp; **PRIORITY**: 0
-
-* **ID**: 001 &nbsp;&nbsp;&nbsp;**NAME**: Student Search &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
- **ESTIMATION**: 2 &nbsp;&nbsp; **PRIORITY**: 1
-
-* **ID**: 000 &nbsp;&nbsp;&nbsp;**NAME**: Insert Student &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
- **ESTIMATION**: 2 &nbsp;&nbsp; **PRIORITY**: 1
-
-* **ID**: 004 &nbsp;&nbsp;&nbsp;**NAME**: Modify Leader &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
- **ESTIMATION**: 2 &nbsp;&nbsp; **PRIORITY**: 2
-
-* **ID**: 002a &nbsp;**NAME**: Remove Student &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
- **ESTIMATION**: 2 &nbsp;&nbsp; **PRIORITY**: 2
-
-* **ID**: 002b &nbsp;**NAME**: Remove all students &nbsp;&nbsp;&nbsp;&nbsp; **ESTIMATION**: 1 &nbsp;&nbsp; **PRIORITY**: 2
-
-* **ID**: 003 &nbsp;&nbsp;&nbsp;**NAME**: Modify Student &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
- **ESTIMATION**: 3 &nbsp;&nbsp; **PRIORITY**: 2
-
-* **ID**: 005 &nbsp;&nbsp;&nbsp;**NAME**: Show Students &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
- **ESTIMATION**: 1 &nbsp;&nbsp; **PRIORITY**: 2
-
-* **ID**: 009 &nbsp;&nbsp;&nbsp;**NAME**: Delete Teacher &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
- **ESTIMATION**: 1 &nbsp;&nbsp; **PRIORITY**: 3
-
-* **ID**: 008 &nbsp;&nbsp;&nbsp;**NAME**: Add Teacher &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-**ESTIMATION**: 1 &nbsp;&nbsp; **PRIORITY**: 3
-
-* **ID**: 006 &nbsp;&nbsp;&nbsp;**NAME**: Import Data &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
- **ESTIMATION**: 1 &nbsp;&nbsp; **PRIORITY**: 4
-
-* **ID**: 007 &nbsp;&nbsp;&nbsp;**NAME**: Save Data &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-**ESTIMATION**: 1 &nbsp;&nbsp; **PRIORITY**: 4
-
-* **ID**: FIX_01 &nbsp;&nbsp;&nbsp;**NAME**: Use STL lists
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-**ESTIMATION**: 1
+| ID | NAME | ESTIMATION | PRIORITY |
+|:--:|:-----|:----------:|:--------:|
+| |System Foundations | 5 | 0 |
+| 010 | Login | 2 | 0 |
+| 001 | Student Search | 2 | 1 |
+| 000 | Insert Student | 2 | 1 |
+| 004 | Modify Leader | 2 | 2 |
+| 002a | Remove Student | 2 | 2 |
+| 002b | Remove all students | 1 | 2 |
+| 003 | Modify Student | 3 | 2 |
+| 005 | Show Students | 1 | 3 |
+| 008 | Add Teacher | 1 | 3 |
+| 009 | Delete Teacher | 1 | 3 |
+| 006 | Import Data | 2 | 4 |
+| 007 | Save Data | 2 | 4 |
