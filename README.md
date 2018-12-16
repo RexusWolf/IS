@@ -56,4 +56,4 @@ In our fourth and...sadly...last practice, we're going to work together as a Scr
 * [Product Backlog](https://github.com/RexusWolf/IS/blob/master/Implementation/SCRUM/productBacklog.md)
 * [Sprint Backlog](https://github.com/RexusWolf/IS/blob/master/Implementation/SCRUM/SprintBacklog.md)
 
-![BurndownChart](Media/burndownChart.png)
+![BurndownChart](Media/bdChart.png)
