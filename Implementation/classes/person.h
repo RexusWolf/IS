@@ -5,14 +5,14 @@
 
   class Person{
   private:
-    string name_, surname_, dni_, address_, birthDate_;
+    string name_, surname_, dni_, address_, birthDate_, email_;
     int phoneNumber_;
   public:
     inline Person(const string &name, const string &surname, const string &dni,
     const string &address = "", const string &birthDate = "",
-    const int phoneNumber = 0){
+    const string &email = "", const int phoneNumber = 0){
     name_ = name; surname_ = surname; dni_ = dni; address_ = address;
-    birthDate_ = birthDate; phoneNumber_ = phoneNumber;
+    birthDate_ = birthDate; email_ = email; phoneNumber_ = phoneNumber;
     }
 
     inline string getName() const {return name_;}
@@ -32,6 +32,9 @@
 
     inline int getPhoneNumber() const {return phoneNumber_;}
     inline void setPhoneNumber(const int phoneNumber) {phoneNumber_ = phoneNumber;}
+
+    inline string getEmail() const {return email_;}
+    inline void setEmail(const string email) {email_ = email;}
   };
 
 
