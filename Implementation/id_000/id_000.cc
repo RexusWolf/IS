@@ -19,9 +19,12 @@ Student newStudent(){
   cout<<"Introduce NAME: "<<endl;
   cin>>aux;
   aux.setName(aux);
-	cout<<"Introduce SURNAME: "<<endl;
+	cout<<"\nIntroduce SURNAME: "<<endl;
   cin>>aux;
   aux.setSurname(aux);
+  cout<<"\nIntroduce DNI: "<<endl;
+  cin>>aux;
+  aux.setDNI(aux);
   cout<<"\nIntroduce ADDRESS: "<<endl;
   cin>>aux;
   aux.setAddress(aux);

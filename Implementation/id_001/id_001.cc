@@ -21,7 +21,7 @@ list<Student>::iterator e, bool show = false){
 	do{
 		std::cout << "Select attribute:\n1.Surname\n2.DNI\n0.Exit\n\n";
 		std::cin >> opt;
-	while( (opt != 0) && (opt != 1) && (opt != 2) );
+	}while( (opt != 0) && (opt != 1) && (opt != 2) );
 	if(opt == 0){
 		return;
 	}
