@@ -5,8 +5,15 @@
 #include <cstring>
 #include "person.h"
 #include <fstream>
+#include <istream>
+#include <ostream>
+using std::ostream;
 using std::string;
 using std::ofstream;
+using std::istream;
+using std::cout;
+using std::cin;
+using std::endl;
 
 class StudentBin;
 
@@ -46,6 +53,63 @@ public:
       stream << "\n* **Phone Number:** " << std::to_string(s.getPhoneNumber());
       stream << "\n* **Birth Date:** " << s.getBirthDate() << "\n\n\n";
       return stream;
+  }
+
+  friend ostream& operator<<(ostream& stream, const Student &s){
+    stream << "Surname, Name: " << s.getSurname() <<", "<< s.getName();
+    stream << "\nDNI: " << s.getDNI() << "\nHighest Course: " << s.getHighestCourse();
+    stream << "\nTeam Number: " << std::to_string(s.getTeamNumber());
+    stream << "\nRole: " << (s.getIsLeader()?" Leader":" Member");
+    stream << "\nAddress: " << s.getAddress() << "\nEmail: " << s.getEmail();
+    stream << "\nPhone Number: " << std::to_string(s.getPhoneNumber());
+    stream << "\nBirth Date: " << s.getBirthDate() << "\n\n\n";
+    return stream;
+  };
+
+  friend istream& operator>>(istream& stream, Student &s){
+    char[32] aux;
+    int intaux;
+
+    cout<<"Introduce NAME: "<< endl;
+    stream>>aux;
+    s.setName(aux);
+
+    cout<<"\nIntroduce SURNAME: "<<endl;
+    stream>>aux;
+    s.setSurname(aux);
+
+    cout<<"\nIntroduce DNI: "<<endl;
+    stream>>aux;
+    s.setDNI(aux);
+
+    cout<<"\nIntroduce ADDRESS: "<<endl;
+    stream>>aux;
+    s.setAddress(aux);
+
+    cout<<"\nIntroduce EMAIL: "<<endl;
+    stream>>aux;
+    s.setEmail(aux);
+
+    cout<<"\nIntroduce BIRTH DATE: "<<endl;
+    stream>>aux;
+    s.setBirthDate(aux);
+
+    cout<<"\nIntroduce PHONE NUMBER: "<<endl;
+    stream>>intaux;
+    s.setPhoneNumber(intaux);
+
+    cout<<"\nIntroduce HIGHEST COURSE REGISTERED: "<<endl;
+    stream>>intaux;
+    s.setHighestCourse(intaux);
+
+    cout<<"\nIntroduce TEAM NUMBER: "<<endl;
+    stream>>intaux;
+    s.setTeamNumber(intaux);
+
+    cout<<"\nIntroduce ROLE (0 = member, non-0 = leader): "<<endl;
+    stream>>intaux;
+    s.setIsLeader(intaux);
+  
   }
 };
 

@@ -7,53 +7,15 @@
 #include <list>
 #include "id_000.h"
 #include "person.h"
-#include "student.h"¡
+#include "student.h"
+#include "../id_001/id_001.h"
 using std::string;
 using std::list;
 
-// This function creates an auxiliar student that we'll send to INSERT_STUDENT.
-Student newStudent(){
-  Student aux;
-  string aux[32];
-  int intaux;
-  cout<<"Introduce NAME: "<<endl;
-  cin>>aux;
-  aux.setName(aux);
-	cout<<"\nIntroduce SURNAME: "<<endl;
-  cin>>aux;
-  aux.setSurname(aux);
-  cout<<"\nIntroduce DNI: "<<endl;
-  cin>>aux;
-  aux.setDNI(aux);
-  cout<<"\nIntroduce ADDRESS: "<<endl;
-  cin>>aux;
-  aux.setAddress(aux);
-  cout<<"\nIntroduce EMAIL: "<<endl;
-  cin>>aux;
-  aux.setEmail(aux);
-  cout<<"\nIntroduce BIRTH DATE: "<<endl;
-  cin>>aux;
-  aux.setBirthDate(aux);
-  cout<<"\nIntroduce PHONE NUMBER: "<<endl;
-  cin>>intaux;
-  aux.setPhoneNumber(intaux);
-  cout<<"\nIntroduce HIGHEST COURSE REGISTERED: "<<endl;
-  cin>>intaux;
-  aux.setCourse(intaux);
-  cout<<"\nIntroduce TEAM NUMBER: "<<endl;
-  cin>>intaux;
-  aux.setTeamNumber(intaux);
-  cout<<"\nIntroduce ROLE: "<<endl;
-  cin>>intaux;
-  aux.setRole(intaux);
-
-  return aux;
-}
-
-bool insertStudent(Student& s, list<Student> students){
+bool insertStudent(const Student& s, list<Student> students){
   // In the next codeline we'll check if the student is already in our database.
   if(students.size()<150){
-    if(findStudent(s.getSurname(), s.getDNI(), students_.begin(), students_.end())>=1){
+    if(findStudent(2, s.getDNI(), students.begin(), students.end()) == students.end()){
       return false;
     }
 

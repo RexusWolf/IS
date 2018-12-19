@@ -15,7 +15,7 @@ one matching student, the function asks for the DNI.
 using std::list;
 
 list<Student>::iterator studentSearch(list<Student>::iterator b,
-list<Student>::iterator e, bool show = false){
+list<Student>::iterator e, bool show){
 	int opt;
 	string aux;
 	do{
@@ -25,14 +25,14 @@ list<Student>::iterator e, bool show = false){
 	if(opt == 0){
 		return;
 	}
-	std::cout << (opt==1)?"Introduce surname:":"Introduce DNI:" << '\n';
+	std::cout << ((opt==1)?"Introduce surname:":"Introduce DNI:") << '\n';
 	std::cin >> aux;
-	return(findStudent(opt, aux, e, b, show))
+	return(findStudent(opt, aux, e, b, show));
 }
 
-list<Student>::iterator findStudent(int opt, string& src,
-list<Student>::iterator b, list<Student>::iterator e, bool show = false){
-	list<Student>iterator it, it2;
+list<Student>::iterator findStudent(int opt, const string& src,
+list<Student>::iterator b, list<Student>::iterator e, bool show){
+	list<Student>::iterator it, it2;
 	int counter = 0;
 	string aux;
 	if(opt == 1){
