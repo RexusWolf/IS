@@ -1,6 +1,9 @@
 #ifndef ID_005_H
-  #define
+  #define ID_005_H
+  
+  #include <list>
+  #include "../classes/student.h"
 
-  void showStudents(list<Student> students);
+  void showStudents(std::list<Student> students);
 
 #endif

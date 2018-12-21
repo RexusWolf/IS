@@ -7,7 +7,7 @@
     using std::list;
 
     list<Student>::iterator studentSearch(list<Student>::iterator b,
-    list<Student>::iterator e, bool show = false);
+      list<Student>::iterator e, bool show = false);
     list<Student>::iterator findStudent(int opt, const string& src,
-    list<Student>::iterator b, list<Student>::iterator e, bool show = false);
+      list<Student>::iterator b, list<Student>::iterator e, bool show = false);
 #endif

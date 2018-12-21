@@ -20,42 +20,5 @@
 
 //The fuction update the leader of a group.
 int Modify_Team_Leader(){
-
-  student aux;
-
-  //We use a txt file as database, so, let's open .txt
-  //Declare an input file stream (ifstream) variable.
-
-  ifstream inFile;
-
-  inFile.open("database.txt");
-  //check if the file exist or can be open.
-  if (!inFile){
-    std::cout << "Not able to open database" << \n;
-    //finish the program with an error.
-    exit(1);
-  }
-
-  int groupnumber;
-  std::string new_leader;
-
-  //Insert the number of the group that you want to change the lider.
-  std::cout<<"Insert the number of the group that you want to change the lider\n";
-  std::cin>>groupnumber;
-
-  while (inFile >> groupnumber) {
-    if (groupnumber == student.teamNumber) {
-      if(1 == student.role){
-        setRole(0);
-      }
-    }
-  }
-
-  std::cout << "Select the Student to become the leader \n";
-
-  //Aqu� me he quedao xd
-
-
-
-  inFile.close();
+  return 0;
 }

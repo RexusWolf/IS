@@ -1,6 +1,4 @@
 #ifndef ID_004_H
-  #define
-
-
-
+  #define ID_004_H
+  int Modify_Team_Leader();
 #endif

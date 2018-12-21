@@ -1,6 +1,9 @@
 #ifndef ID_002A_H
   #define ID_002A_H
 
-  int deleteStudent (list<Student> students, string surname);
+  #include "../classes/student.h"
+  #include <list>
+
+  int deleteStudent (std::list<Student> students,const string &surname);
 
 #endif
