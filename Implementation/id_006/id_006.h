@@ -1,6 +1,6 @@
 #ifndef ID_006_H
-#define
+  #define
 
   list<Student> importData();
-  
+
 #endif

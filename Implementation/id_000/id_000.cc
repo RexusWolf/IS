@@ -6,8 +6,7 @@
 #include <iostream>
 #include <list>
 #include "id_000.h"
-#include "person.h"
-#include "student.h"
+#include "../classes/student.h"
 #include "../id_001/id_001.h"
 using std::string;
 using std::list;

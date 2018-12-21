@@ -8,11 +8,11 @@ one matching student, the function asks for the DNI.
 */
 
 
-#include "student.h"
 #include <string>
 #include <list>
 #include <iostream>
 using std::list;
+#include "../classes/student.h"
 
 list<Student>::iterator studentSearch(list<Student>::iterator b,
 list<Student>::iterator e, bool show){

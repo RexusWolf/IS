@@ -1,10 +1,11 @@
 // ID_000: Show Students
 
-#include "student.h"
+
 #include <string>
 #include <list>
 #include <iostream>
 #include "id_005.h"
+#include "../classes/student.h"
 using std::list;
 using std::string
 

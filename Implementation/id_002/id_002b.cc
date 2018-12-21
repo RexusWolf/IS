@@ -4,9 +4,8 @@
 #include <fstream>
 #include <iostream>
 #include <list>
-#include "id_002B.h"
-#include "person.h"
-#include "student.h"
+#include "id_002b.h"
+#include "../classes/student.h"
 using std::list;
 
 void deleteAll(list<Student> students){

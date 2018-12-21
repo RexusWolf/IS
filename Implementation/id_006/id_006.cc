@@ -1,11 +1,10 @@
 // ID_006: Import Data
 
-#include "student.h"
 #include <string>
 #include <list>
 #include <iostream>
 #include "id_006.h"
-#include "student.h"
+#include "../classes/student.h"
 using std::list;
 using std::string
 

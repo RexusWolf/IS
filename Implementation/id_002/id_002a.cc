@@ -4,9 +4,8 @@
 #include <fstream>
 #include <iostream>
 #include <list>
-#include "id_002A.h"
-#include "person.h"
-#include "student.h"
+#include "id_002a.h"
+#include "../classes/student.h"
 using std::list;
 
 int deleteStudent (list<Student> students, string surname){
