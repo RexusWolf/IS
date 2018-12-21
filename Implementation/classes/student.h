@@ -7,6 +7,7 @@
 #include <fstream>
 #include <istream>
 #include <ostream>
+#include <iostream>
 using std::ostream;
 using std::string;
 using std::ofstream;
@@ -64,35 +65,41 @@ public:
     stream << "\nPhone Number: " << std::to_string(s.getPhoneNumber());
     stream << "\nBirth Date: " << s.getBirthDate() << "\n\n\n";
     return stream;
-  };
+  }
 
   friend istream& operator>>(istream& stream, Student &s){
-    char[32] aux;
+    char aux[32];
     int intaux;
 
     cout<<"Introduce NAME: "<< endl;
-    stream>>aux;
-    s.setName(aux);
+    stream.getline(aux, 32);
+    //stream.ignore(99999, '\n');
+    s.setName(string(aux));
 
     cout<<"\nIntroduce SURNAME: "<<endl;
-    stream>>aux;
-    s.setSurname(aux);
+    stream.getline(aux, 32);
+    //stream.ignore(99999, '\n');
+    s.setSurname(string(aux));
 
     cout<<"\nIntroduce DNI: "<<endl;
-    stream>>aux;
-    s.setDNI(aux);
+    stream.getline(aux, 32);
+    //stream.ignore(99999, '\n');
+    s.setDNI(string(aux));
 
     cout<<"\nIntroduce ADDRESS: "<<endl;
-    stream>>aux;
-    s.setAddress(aux);
+    stream.getline(aux, 32);
+    //stream.ignore(99999, '\n');
+    s.setAddress(string(aux));
 
     cout<<"\nIntroduce EMAIL: "<<endl;
-    stream>>aux;
-    s.setEmail(aux);
+    stream.getline(aux, 32);
+    //stream.ignore(99999, '\n');
+    s.setEmail(string(aux));
 
     cout<<"\nIntroduce BIRTH DATE: "<<endl;
-    stream>>aux;
-    s.setBirthDate(aux);
+    stream.getline(aux, 32);
+    //stream.ignore(99999, '\n');
+    s.setBirthDate(string(aux));
 
     cout<<"\nIntroduce PHONE NUMBER: "<<endl;
     stream>>intaux;
@@ -109,7 +116,8 @@ public:
     cout<<"\nIntroduce ROLE (0 = member, non-0 = leader): "<<endl;
     stream>>intaux;
     s.setIsLeader(intaux);
-  
+
+    return stream;
   }
 };
 
