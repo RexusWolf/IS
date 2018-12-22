@@ -1,6 +1,7 @@
 #ifndef ID_006_H
-  #define
-
-  list<Student> importData();
+  #define ID_006_H
+  #include "../classes/student.h"
+  #include <list>
+  std::list<Student> importData();
 
 #endif

@@ -129,6 +129,11 @@ private:
   int teamNumber_;
   bool isLeader_;
 public:
+  StudentBin(const string &name = "", const string &surname = "", const string &dni = "",
+    const string &address = "", const string &birthDate = "",
+    const string &email = "", const int phoneNumber = 0,
+    const int highestCourse = 1, const int teamNumber = 0,
+    const bool isLeader = false){}
   StudentBin(const Student &s);
   friend class Student;
   char* getDNI()  {return dni_;}

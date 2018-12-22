@@ -3,21 +3,29 @@
 #include <string>
 #include <list>
 #include <iostream>
+#include <fstream>
 #include "id_006.h"
 #include "../classes/student.h"
 using std::list;
-using std::string
+using std::string;
 
 
-fstream& file
+
 list<Student> importData(){
-  string namefile[32];
+  string filename;
   list<Student> students;
-  cout<<"Introduce Binary File name: "<<endl;
-  cin>>namefile;
-  std::ifstream bfile (namefile);
+  StudentBin aux;
+  
+  cout << "Introduce Binary File name: "<<endl;
+  cin>>filename;
+  std::ifstream bfile ;
+  bfile.open(filename, std::ios::binary);
   if (bfile.is_open()){
-    bfile.read(students, nStudents * sizeof(Student));
+    while(!bfile.eof()){
+      bfile.read((char*)&aux, sizeof(StudentBin));
+      Student a(aux);
+      students.push_back(a);
+    }
     bfile.close();
   }
   else cout<<"Error opening binary file."<<endl;
