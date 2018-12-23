@@ -47,9 +47,9 @@ public:
 
   friend ofstream& operator<<(ofstream& stream, const Student &s){
       stream << "* **Surname, Name:** " << s.getSurname() <<", "<< s.getName();
-      stream << "\n* **DNI:** " << s.getDNI() << "\n* **Course:** " << s.getHighestCourse();
+      stream << "\n* **DNI:** " << s.getDNI() << "\n* **Highest Course:** " << s.getHighestCourse();
       stream << "\n* **Team Number:** " << std::to_string(s.getTeamNumber());
-      stream << "\n* **Role:** " << s.getIsLeader()?" Leader":" Member";
+      stream << "\n* **Role:** " << s.getIsLeader()?"Leader":"Member";
       stream << "\n* **Address:** " << s.getAddress() << "\n* **Email:**" << s.getEmail();
       stream << "\n* **Phone Number:** " << std::to_string(s.getPhoneNumber());
       stream << "\n* **Birth Date:** " << s.getBirthDate() << "\n\n\n";
@@ -60,7 +60,7 @@ public:
     stream << "Surname, Name: " << s.getSurname() <<", "<< s.getName();
     stream << "\nDNI: " << s.getDNI() << "\nHighest Course: " << s.getHighestCourse();
     stream << "\nTeam Number: " << std::to_string(s.getTeamNumber());
-    stream << "\nRole: " << (s.getIsLeader()?" Leader":" Member");
+    stream << "\nRole: " << (s.getIsLeader()?"Leader":"Member");
     stream << "\nAddress: " << s.getAddress() << "\nEmail: " << s.getEmail();
     stream << "\nPhone Number: " << std::to_string(s.getPhoneNumber());
     stream << "\nBirth Date: " << s.getBirthDate() << "\n\n\n";
@@ -124,7 +124,7 @@ public:
 ######      #########   ###   ###
 #######     #########   ####  ###
 ###   ###      ###      ####  ###
-#########      ###      ##### ###
+###  ###      ###      ##### ###
 ########       ###      ##### ###
 ###   ###      ###      ### #####
 ###   ###   #########   ###  ####

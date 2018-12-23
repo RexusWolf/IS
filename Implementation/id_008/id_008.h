@@ -1,6 +1,6 @@
 #ifndef ID_008_H
-  #define
+  #define ID_008_H
 
-
+  void addTeacher();
 
 #endif
