@@ -8,10 +8,11 @@ using std::cin;
 using std::cout;
 using std::ofstream;
 
-void addTeacher(){
+void addTeacher(bool coordinator){
     Teacher t("", "", "", "", "");
     cout << "Introduce the Teacher's data\n";
     cin >> t;
+    t.setCoordinator(coordinator);
     ofstream f("teachers.txt", std::ios::out|std::ios::app);
     f << t;
     f.close();

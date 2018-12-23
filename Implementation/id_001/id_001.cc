@@ -13,6 +13,8 @@ one matching student, the function asks for the DNI.
 #include <iostream>
 using std::list;
 #include "../classes/student.h"
+#include "id_001.h"
+#include "../id_000/id_000.h"
 
 list<Student>::iterator studentSearch(list<Student>::iterator b,
 list<Student>::iterator e, bool show){
@@ -23,7 +25,7 @@ list<Student>::iterator e, bool show){
 		std::cin >> opt;
 	}while( (opt != 0) && (opt != 1) && (opt != 2) );
 	if(opt == 0){
-		return;
+		return e;
 	}
 	std::cout << ((opt==1)?"Introduce surname:":"Introduce DNI:") << '\n';
 	std::cin >> aux;

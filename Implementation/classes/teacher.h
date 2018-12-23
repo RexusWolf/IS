@@ -143,7 +143,7 @@
 
       cout<<"\nIntroduce ROLE (0 = assistant, non-0 = coordinator): "<<endl;
       stream>>intaux;
-      t.setIsLeader(intaux);
+      t.setCoordinator(intaux);
 
       return stream;
     }
@@ -166,8 +166,10 @@
       t.setEncPassword(aux);
       getline(stream, aux);
       t.setPhoneNumber(std::stoi(aux));
-      aux = getpass();
-      t.setIsCoordinator(std::stoi(aux));
+      aux = mygetpass();
+      t.setCoordinator(std::stoi(aux));
+      return stream;
     }
+    
   };
 #endif

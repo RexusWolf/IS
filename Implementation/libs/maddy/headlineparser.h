@@ -10,7 +10,7 @@
 #include <string>
 #include <regex>
 
-#include "maddy/blockparser.h"
+#include "blockparser.h"
 
 // -----------------------------------------------------------------------------
 

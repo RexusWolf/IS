@@ -1,5 +1,6 @@
 #ifndef ID_000_H
   #define ID_000_H
-  
-  bool insertStudent(const Student& s, list<Student> students);
+  #include "../classes/student.h"
+  #include<list>
+  bool insertStudent(const Student& s, std::list<Student> students);
 #endif

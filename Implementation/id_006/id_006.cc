@@ -29,4 +29,5 @@ list<Student> importData(){
     bfile.close();
   }
   else cout<<"Error opening binary file."<<endl;
+  return students;
 }

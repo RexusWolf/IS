@@ -4,6 +4,6 @@
   #include "../classes/student.h"
   #include <list>
 
-  int deleteStudent (std::list<Student> students,const string &surname);
+  int deleteStudent (std::list<Student> students);
 
 #endif

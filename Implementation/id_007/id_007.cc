@@ -21,4 +21,5 @@ list<Student> saveData(list<Student> students){
     bfile.write((char*)&aux, sizeof(StudentBin));
     }
   bfile.close();
+  return students;
 }

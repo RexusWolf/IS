@@ -9,7 +9,7 @@
 #include <string>
 #include <regex>
 
-#include "maddy/lineparser.h"
+#include "lineparser.h"
 
 // -----------------------------------------------------------------------------
 
