@@ -25,6 +25,7 @@ int main(){
     bool isCoord;
     int opt = 0;
     Student aux("", "", "");
+    StudentBin binaux;
     if ( (!f.is_open()) || (f.peek() == std::ifstream::traits_type::eof())) {
         if(f.is_open()){
           f.close();
@@ -43,8 +44,8 @@ int main(){
       auxf.close();
       sf.open("students.bin");
     }
-    while(!sf.eof()){
-      sf.read((char*)&aux, sizeof(StudentBin));
+    while(!(sf.peek() == std::ifstream::traits_type::eof())){
+      sf.read((char*)&binaux, sizeof(StudentBin));
       Student a(aux);
       students.push_back(a);
     }
@@ -94,7 +95,7 @@ int main(){
             }
             case 8:{
                 if(isCoord){
-                    addTeacher();
+                    addTeacher(false);
                     break;
                 }
             }
@@ -113,8 +114,10 @@ int main(){
         cin >> opt;
     }
     ofstream dump("students.bin", std::ios::out);
-    for(list<Student>::iterator it = students.begin(); it != students.end(); ++it){
-      StudentBin aux(*it);
-      dump.write((char*)&aux, sizeof(StudentBin));
+    if(!students.empty()){
+      for(list<Student>::iterator it = students.begin(); it != students.end(); ++it){
+        StudentBin aux(*it);
+        dump.write((char*)&aux, sizeof(StudentBin));
+      }
     }
 }

@@ -36,6 +36,9 @@ list<Student>::iterator b, list<Student>::iterator e, bool show){
 	list<Student>::iterator it, it2;
 	int counter = 0;
 	string aux;
+	if(b == e){
+		return(e);
+	}
 	if(opt == 1){
 		for(it = e; it != b; ++it){
 			if(it->getSurname() == src){

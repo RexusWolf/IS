@@ -11,10 +11,10 @@
 using std::string;
 using std::list;
 
-bool insertStudent(const Student& s, list<Student> students){
+bool insertStudent(const Student& s, list<Student> & students){
   // In the next codeline we'll check if the student is already in our database.
   if(students.size()<150){
-    if(findStudent(2, s.getDNI(), students.begin(), students.end()) == students.end()){
+    if(findStudent(2, s.getDNI(), students.begin(), students.end()) != students.end()){
       return false;
     }
 
