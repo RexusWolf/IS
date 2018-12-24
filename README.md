@@ -1,5 +1,6 @@
-# ![Repositorio IS Grupo 5](./Media/logo.png) Repositorio IS Grupo 5
+<p align="center"><img src="./Media/Banner.png" alt="GP5 Logo"></p>
 
+# ![Repositorio IS Grupo 5](./Media/logo.png) GP5 Repository
 This repository contains all the created files for the Software Engineering practices. These files belong to **Group 5**.
 
 ### Table of Contents
@@ -12,7 +13,7 @@ This repository contains all the created files for the Software Engineering prac
 ![Header](./Media/headerhead.png)
 ## Collaborators
 
-This group is compounded by 3 students:
+This group is composed by 3 students:
 * [Molina Prieto, Francisco Javier **(Group leader)**](https://github.com/RexusWolf)
 * [Prieto Barón, Álvaro](https://github.com/AdoenLunnae)
 * [Muñoz Cubero, Antonio](https://github.com/ErTonix12)
