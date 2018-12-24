@@ -80,7 +80,7 @@ int main(){
             }break;
             case 5:{
                 showStudents(students);
-            }
+            }break;
             case 6:{
                 if(isCoord){
                     students = importData();
