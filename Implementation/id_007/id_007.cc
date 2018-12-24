@@ -10,8 +10,8 @@ using std::list;
 using std::string;
 
 list<Student> saveData(list<Student> students){
-  string filename; 
-  
+  string filename;
+
   cout << "Introduce Binary File name: "<<endl;
   cin >> filename;
   std::ofstream bfile ;
@@ -19,7 +19,7 @@ list<Student> saveData(list<Student> students){
   for(list<Student>::iterator it = students.begin(); it != students.end(); ++it){
     StudentBin aux(*it);
     bfile.write((char*)&aux, sizeof(StudentBin));
-    }
+  }
   bfile.close();
   return students;
 }

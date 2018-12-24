@@ -2,7 +2,7 @@
 
 #include "id_010.h"
 #include "../classes/teacher.h"
-#include "../libs/getpass.h"
+//#include "../libs/getpass.h"
 #include "../libs/sha256.h"
 #include <string>
 #include <fstream>
@@ -22,17 +22,19 @@ bool login(bool &isCoord){
     list<Teacher> lst;
     ifstream f;
     bool to_return = false;
-    
+
     cout << "Username:  ";
     cin >> username;
     cout << "\nPassword:  ";
-    passwd = mygetpass();
+    cin >> passwd;
     passwd = hash256_hex_string(passwd);
-
     f.open("teachers.txt", std::ios::in);
-
-    while(!f.eof()){
+    bool end = false;
+    while(!end){
         f >> aux;
+        if(f.peek() == std::ifstream::traits_type::eof()){
+          end = true;
+        }
         lst.push_back(aux);
     }
 
@@ -45,6 +47,6 @@ bool login(bool &isCoord){
             break;
         }
     }
-    
+
     return to_return;
 }

@@ -12,6 +12,7 @@ void addTeacher(bool coordinator){
     Teacher t("", "", "", "", "");
     cout << "Introduce the Teacher's data\n";
     cin >> t;
+    cout << "2\n";
     t.setCoordinator(coordinator);
     ofstream f("teachers.txt", std::ios::out|std::ios::app);
     f << t;

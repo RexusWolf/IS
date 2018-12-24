@@ -21,17 +21,28 @@ using std::cin;
 
 int main(){
     std::ifstream f("teachers.txt");
-    std::ifstream sf("students.bin");
+    std::ifstream sf("students.bin", std::ios::binary);
     bool isCoord;
     int opt = 0;
     Student aux("", "", "");
-    if ( f.peek() == std::ifstream::traits_type::eof() ){
+    if ( (!f.is_open()) || (f.peek() == std::ifstream::traits_type::eof())) {
+        if(f.is_open()){
+          f.close();
+        }
         cout << "You are the first user, so you are assigned coordinator.\n";
-        cout << "Please introduce your data";
+        cout << "Please introduce your data.\n";
         addTeacher(true);
     }
-    f.close();
+    else{
+      f.close();
+    }
     std::list<Student> students;
+    if(!sf.is_open()){
+      sf.close();
+      ofstream auxf("students.bin");
+      auxf.close();
+      sf.open("students.bin");
+    }
     while(!sf.eof()){
       sf.read((char*)&aux, sizeof(StudentBin));
       Student a(aux);
@@ -42,13 +53,18 @@ int main(){
     while(!login(isCoord)){
         cout << "Invalid credentials\n";
     }
+
     std::string coordMenu = "6.Import Data\n7.Save Backup\n8.Add assistant\n9.Delete Assistant\n";
-    std::string menu = "1.Add Student\n2.Delete Student\n3.Clean Database\n4.Modify Student\n5.Show all Students\n" + isCoord?"":coordMenu + "0.Exit";
+    std::string subMenu = isCoord?(coordMenu):("");
+    std::string menu = "1.Add Student\n2.Delete Student\n3.Clean Database\n4.Modify Student\n5.Show all Students\n";
+    menu += subMenu;
+    menu +=  "0.Exit\n";
     cout << menu;
     cin >> opt;
-    while( opt != 0 ){        
+    while( opt != 0 ){
         switch(opt){
             case 1:{
+                cin.ignore();
                 cin >> aux;
                 insertStudent(aux, students);
             }break;
@@ -91,6 +107,14 @@ int main(){
             default:{
                 cout << "Invalid Option\n";
             }
+
         }
+        cout << menu;
+        cin >> opt;
+    }
+    ofstream dump("students.bin", std::ios::out);
+    for(list<Student>::iterator it = students.begin(); it != students.end(); ++it){
+      StudentBin aux(*it);
+      dump.write((char*)&aux, sizeof(StudentBin));
     }
 }

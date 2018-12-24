@@ -1,7 +1,7 @@
 #ifndef TEACHER_H
 #define TEACHER_H value
   #include "person.h"
-  #include "../libs/getpass.h"
+  //#include "../libs/getpass.h"
   #include "../libs/sha256.h"
   #include <string>
   #include <fstream>
@@ -9,6 +9,7 @@
   using std::cout;
   using std::string;
   using picosha2::hash256_hex_string;
+  using std::endl;
   using std::ofstream;
   using std::ifstream;
   using std::istream;
@@ -141,35 +142,41 @@
       aux = hash256_hex_string(aux);
       t.setEncPassword(aux);
 
-      cout<<"\nIntroduce ROLE (0 = assistant, non-0 = coordinator): "<<endl;
-      stream>>intaux;
-      t.setCoordinator(intaux);
-
       return stream;
     }
 
     friend ifstream& operator>>(ifstream& stream, Teacher &t){
       string aux;
+
       getline(stream, aux);
       t.setName(aux);
+
       getline(stream, aux);
       t.setSurname(aux);
+
       getline(stream, aux);
       t.setDNI(aux);
+
       getline(stream, aux);
       t.setAddress(aux);
+
       getline(stream, aux);
       t.setBirthDate(aux);
+
       getline(stream, aux);
       t.setUsername(aux);
+
       getline(stream, aux);
       t.setEncPassword(aux);
+
       getline(stream, aux);
       t.setPhoneNumber(std::stoi(aux));
-      aux = mygetpass();
+
+      getline(stream, aux);
       t.setCoordinator(std::stoi(aux));
+
       return stream;
     }
-    
+
   };
 #endif

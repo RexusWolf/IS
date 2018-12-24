@@ -14,7 +14,6 @@ one matching student, the function asks for the DNI.
 using std::list;
 #include "../classes/student.h"
 #include "id_001.h"
-#include "../id_000/id_000.h"
 
 list<Student>::iterator studentSearch(list<Student>::iterator b,
 list<Student>::iterator e, bool show){

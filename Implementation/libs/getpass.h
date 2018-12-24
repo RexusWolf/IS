@@ -1,5 +1,5 @@
 #ifndef GETPASS_H
-#define GETPASS_H
+  #define GETPASS_H
   #include <termios.h>
   #include <unistd.h>
   #include <stdio.h>
@@ -26,7 +26,7 @@
 
 
 
-  string mygetpass(const char *prompt = "", bool show_asterisk=true)
+  string mygetpass()
   {
     const char BACKSPACE=127;
     const char RETURN=10;
@@ -34,15 +34,12 @@
     string password;
     unsigned char ch=0;
 
-    cout <<prompt<<endl;
-
     while((ch=mygetch())!=RETURN)
       {
         if(ch==BACKSPACE)
           {
               if(password.length()!=0)
                 {
-                  if(show_asterisk)
                   cout <<"\b \b";
                   password.resize(password.length()-1);
                 }
@@ -50,8 +47,7 @@
         else
           {
               password+=ch;
-              if(show_asterisk)
-                  cout <<'*';
+              cout <<'*';
           }
       }
     cout <<endl;
