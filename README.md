@@ -1,6 +1,6 @@
 <p align="center"><img src="./Media/Banner.png" alt="GP5 Logo"></p>
 
-# ![Repositorio IS Grupo 5](./Media/logo.png) GP5 Repository
+# GP5 Repository
 This repository contains all the created files for the Software Engineering practices. These files belong to **Group 5**.
 
 ### Table of Contents
@@ -10,7 +10,6 @@ This repository contains all the created files for the Software Engineering prac
 **[Practice 3 - System Design](#practice-3---system-design)**<br>
 **[Practice 4 - Testing and Implementation](#practice-4---testing-and-implementation)**<br>
 
-![Header](./Media/headerhead.png)
 ## Collaborators
 
 This group is composed by 3 students:
