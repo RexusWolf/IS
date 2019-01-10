@@ -16,18 +16,20 @@ list<Student> importData(){
   list<Student> students;
   StudentBin aux;
   
-  cout << "Introduce Binary File name: "<<endl;
-  cin>>filename;
+  std::cout << "Introduce Binary File name: "<<endl;
+  std::cin >> filename;
   std::ifstream bfile ;
   bfile.open(filename, std::ios::binary);
   if (bfile.is_open()){
+    bfile.read((char*)&aux, sizeof(StudentBin));
     while(!bfile.eof()){
-      bfile.read((char*)&aux, sizeof(StudentBin));
       Student a(aux);
       students.push_back(a);
+      bfile.read((char*)&aux, sizeof(StudentBin));
     }
     bfile.close();
   }
-  else cout<<"Error opening binary file."<<endl;
+  else std::cout<<"Error opening binary file."<<endl;
+  
   return students;
 }
