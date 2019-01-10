@@ -1,18 +1,18 @@
-# ![Repositorio IS Grupo 5](./Media/logo.png) Repositorio IS Grupo 5
+<p align="center"><img src="./Media/Banner.png" alt="GP5 Logo"></p>
 
+# GP5 Repository
 This repository contains all the created files for the Software Engineering practices. These files belong to **Group 5**.
 
 ### Table of Contents
-**[Collaborators](#collaborators)**<br>
 **[Practice 1 - Tutorials](#practice-1---tutorials)**<br>
 **[Practice 2 - Requirements Analysis](#practice-2---requirements-analysis)**<br>
 **[Practice 3 - System Design](#practice-3---system-design)**<br>
 **[Practice 4 - Testing and Implementation](#practice-4---testing-and-implementation)**<br>
+[**Documentation**](https://github.com/RexusWolf/IS/blob/master/IS%20GP5%20DOCUMENTATION.pdf)
 
-![Header](./Media/headerhead.png)
-## Collaborators
+### Collaborators
 
-This group is compounded by 3 students:
+This group is composed by 3 students:
 * [Molina Prieto, Francisco Javier **(Group leader)**](https://github.com/RexusWolf)
 * [Prieto Barón, Álvaro](https://github.com/AdoenLunnae)
 * [Muñoz Cubero, Antonio](https://github.com/ErTonix12)
