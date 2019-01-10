@@ -40,7 +40,7 @@ list<Student>::iterator b, list<Student>::iterator e, bool show){
 		return(e);
 	}
 	if(opt == 1){
-		for(it = e; it != b; ++it){
+		for(it = b; it != e; ++it){
 			if(it->getSurname() == src){
 				counter ++;
 				it2 = it;
@@ -62,7 +62,7 @@ list<Student>::iterator b, list<Student>::iterator e, bool show){
 		}
 	}
 	else{
-		for(it = e; it != b; ++it){
+		for(it = b; it != e; ++it){
 			if(it->getDNI() == src){
 				if(show){
 					std::cout << *it;
